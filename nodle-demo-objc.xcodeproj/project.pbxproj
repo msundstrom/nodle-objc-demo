@@ -13,7 +13,54 @@
 		40C08E632205993E00FD01AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C08E622205993E00FD01AE /* main.m */; };
 		40C08E72220599BE00FD01AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C08E6E220599BD00FD01AE /* ViewController.m */; };
 		40C08E75220599D800FD01AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C08E73220599D800FD01AE /* Main.storyboard */; };
+		40C08EC622059D4C00FD01AE /* nodle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C08EC122059D2800FD01AE /* nodle.framework */; };
+		40C08EC722059D4C00FD01AE /* nodle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40C08EC122059D2800FD01AE /* nodle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40C08EC022059D2800FD01AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C08EBB22059D2800FD01AE /* nodle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 405038E821FC814A005B1585;
+			remoteInfo = nodle;
+		};
+		40C08EC222059D2800FD01AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C08EBB22059D2800FD01AE /* nodle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 405038F121FC814A005B1585;
+			remoteInfo = nodleTests;
+		};
+		40C08EC422059D3300FD01AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C08EBB22059D2800FD01AE /* nodle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 405038E721FC814A005B1585;
+			remoteInfo = nodle;
+		};
+		40C08EC822059D4C00FD01AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C08EBB22059D2800FD01AE /* nodle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 405038E721FC814A005B1585;
+			remoteInfo = nodle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40C08ECA22059D4C00FD01AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40C08EC722059D4C00FD01AE /* nodle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40C08E502205993B00FD01AE /* nodle-demo-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nodle-demo-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +73,7 @@
 		40C08E6E220599BD00FD01AE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		40C08E6F220599BE00FD01AE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		40C08E74220599D800FD01AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40C08EBB22059D2800FD01AE /* nodle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = nodle.xcodeproj; path = nodle/nodle.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C08EC622059D4C00FD01AE /* nodle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				40C08E522205993B00FD01AE /* nodle-demo-objc */,
+				40C08EBA22059D1700FD01AE /* Frameworks */,
 				40C08E512205993B00FD01AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +121,23 @@
 			path = "nodle-demo-objc";
 			sourceTree = "<group>";
 		};
+		40C08EBA22059D1700FD01AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C08EBB22059D2800FD01AE /* nodle.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40C08EBC22059D2800FD01AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C08EC122059D2800FD01AE /* nodle.framework */,
+				40C08EC322059D2800FD01AE /* nodleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,10 +148,13 @@
 				40C08E4C2205993B00FD01AE /* Sources */,
 				40C08E4D2205993B00FD01AE /* Frameworks */,
 				40C08E4E2205993B00FD01AE /* Resources */,
+				40C08ECA22059D4C00FD01AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				40C08EC522059D3300FD01AE /* PBXTargetDependency */,
+				40C08EC922059D4C00FD01AE /* PBXTargetDependency */,
 			);
 			name = "nodle-demo-objc";
 			productName = "nodle-demo-objc";
@@ -116,12 +186,35 @@
 			mainGroup = 40C08E472205993B00FD01AE;
 			productRefGroup = 40C08E512205993B00FD01AE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40C08EBC22059D2800FD01AE /* Products */;
+					ProjectRef = 40C08EBB22059D2800FD01AE /* nodle.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				40C08E4F2205993B00FD01AE /* nodle-demo-objc */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40C08EC122059D2800FD01AE /* nodle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nodle.framework;
+			remoteRef = 40C08EC022059D2800FD01AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40C08EC322059D2800FD01AE /* nodleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = nodleTests.xctest;
+			remoteRef = 40C08EC222059D2800FD01AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40C08E4E2205993B00FD01AE /* Resources */ = {
@@ -148,6 +241,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40C08EC522059D3300FD01AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nodle;
+			targetProxy = 40C08EC422059D3300FD01AE /* PBXContainerItemProxy */;
+		};
+		40C08EC922059D4C00FD01AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nodle;
+			targetProxy = 40C08EC822059D4C00FD01AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40C08E5E2205993E00FD01AE /* LaunchScreen.storyboard */ = {
